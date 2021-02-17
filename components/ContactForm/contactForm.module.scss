@@ -1,0 +1,241 @@
+@import "../assets/sass/variables.scss";
+
+.contentContainer {
+    margin: 0 auto;
+    padding: 10rem;
+    background-image: url("../../assets/dkdmap.webp");
+    background-size: cover;
+    background-position-y: -10rem;
+}
+
+.contentWrapper {
+    display: flex;
+
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+
+    .backgroundForm {
+        background-color: white;
+        opacity: 1;
+        padding: 5rem 10rem;
+        border-radius: 1rem;
+        position: relative;
+
+        h2 {
+            display: block;
+            width: 100%;
+            font-family: 'Maven Pro', sans-serif;
+            font-weight: bold;
+            font-size: 4rem;
+            color: #333333;
+            line-height: 1.2;
+            text-align: left;
+            padding-bottom: 44px;
+        }
+
+        .inputName {
+            font-family: 'Maven Pro', sans-serif;
+            font-size: $font-size-13px;
+            color: #999999;
+            line-height: 1.5;
+            padding-left: 0.8rem;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+    }
+
+    input {
+        margin: 1rem 0;
+        padding: 1rem 1rem;
+        border: none;
+        border-bottom: 2px solid #d9d9d9;
+        outline: none;
+        font-size: $font-size-15px;
+        // transition: 0.8s;
+        transition: all 0.4s;
+
+        &:focus::placeholder {
+            opacity: 0;
+        }
+
+        &:focus {
+            border-bottom: #ff4b5a;
+
+        }
+    }
+
+    textarea {
+        margin: 1rem 0;
+        padding: 5rem 0rem;
+        border: none;
+        border-bottom: 2px solid #d9d9d9;
+        outline: none;
+        font-size: $font-size-13px;
+        transition: all 0.4s;
+
+        &:focus::placeholder {
+            opacity: 0;
+        }
+
+        &:focus {
+            border-bottom: 2px solid #ff4b5a;
+
+        }
+    }
+
+    .closeBtn {
+        color: #333333;
+        font-size: $font-size-14px;
+        position: absolute;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        background-color: #fff;
+        border: 1px solid #ececec;
+        border-radius: 50%;
+        top: -15px;
+        right: -15px;
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4;
+        outline: none;
+
+        &:hover {
+            color: #ff4b5a;
+            font-weight: bold;
+        }
+    }
+
+    .submitBtn {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        min-width: 160px;
+        height: 50px;
+        background-color: #ff4b5a;
+        border-radius: 25px;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: $font-size-15px;
+        color: #fff;
+        line-height: 1.2;
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
+        box-shadow: 0 10px 30px 0px rgb(255 75 90 / 50%);
+        -moz-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+        -webkit-box-shadow: 0 10px 30px 0px rgb(255 75 90 / 50%);
+        border: none;
+        outline: none;
+        font-size: $font-size-13px;
+    }
+
+    i {
+        position: absolute;
+        font-size: 4.5rem;
+        color: white;
+        // box-shadow: 0px 10px 30px 2px rgb(248 248 248 / 30%);
+    }
+}
+
+.logoText {
+    display: flex;
+    margin-top: 2.5rem;
+    justify-content: center;
+
+}
+
+
+
+.pointer span {
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: 31px;
+    padding: 5px 0px;
+
+}
+
+.text {
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: bottom;
+    -ms-transform-origin: bottom;
+    transform-origin: bottom;
+    transition: -webkit-transform 150ms ease 150ms;
+    transition: transform 150ms ease 150ms;
+    transition: transform 150ms ease 150ms, -webkit-transform 150ms ease 150ms;
+}
+
+.note.open .text {
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.pointer {
+    position: relative;
+    margin: 10rem;
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: $red;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(255, 82, 82, 1);
+    animation: pulse 3s infinite;
+    opacity: 0.9;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(255, 105, 105, 0.7);
+    }
+
+    70% {
+        transform: scale(1.2);
+        box-shadow: 0 0 0 30px rgba(181, 149, 149, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+    }
+}
+
+// @keyframes pulse {
+//     0% {
+//         -moz-box-shadow: 0 0 0 0 rgb(244 22 22 / 73%);
+//         box-shadow: 0 0 0 0 rgb(244 22 22 / 73%);
+//     }
+
+//     70% {
+//         -moz-box-shadow: 0 0 0 10px rgba(244, 157, 22, 0);
+//         box-shadow: 0 0 0 10px rgba(244, 157, 22, 0);
+//     }
+
+//     100% {
+//         -moz-box-shadow: 0 0 0 0 rgba(244, 157, 22, 0);
+//         box-shadow: 0 0 0 0 rgba(244, 157, 22, 0);
+//     }
+// }

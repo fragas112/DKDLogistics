@@ -1,0 +1,79 @@
+.container {
+  padding: 1rem 4rem;
+  font-family: "Maven Pro", sans-serif;
+  background-color: black;
+  opacity: 0.7;
+}
+.container nav {
+  max-width: 67%;
+  margin: 0 auto;
+  display: flex;
+  flex: 1;
+}
+.container nav img {
+  transition: 0.8s;
+  cursor: pointer;
+}
+.container nav img:hover {
+  transform: scale(1.1);
+}
+.container .navitems {
+  display: none;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+}
+.container .navitems li {
+  padding: 0 1rem;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, red, red 50%, white 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 400ms ease;
+}
+.container .navitems li:hover {
+  background-position: 0 100%;
+}
+@media (max-width: 799px) {
+  .container .navitems {
+    display: flex;
+  }
+}
+.container .navitemsVisable {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+}
+.container .navitemsVisable li {
+  padding: 0 1rem;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, red, red 50%, white 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 400ms ease;
+}
+.container .navitemsVisable li:hover {
+  background-position: 0 100%;
+}
+@media (max-width: 800px) {
+  .container .navitemsVisable li {
+    display: none;
+  }
+}

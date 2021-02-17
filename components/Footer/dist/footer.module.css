@@ -1,0 +1,13 @@
+.contentContainer {
+  background-color: #383838;
+  margin: 0 auto;
+}
+.contentContainer .contentWrapper {
+  padding: 10rem 0;
+  text-align: center;
+}
+.contentContainer p {
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+}
