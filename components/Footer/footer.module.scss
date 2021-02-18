@@ -76,3 +76,86 @@
         color: white;
     }
 }
+
+@media (max-width:650px){
+    .contentContainer{
+     
+        .contentWrapper{
+    
+           .footerSection1{
+
+           display: flex;
+           width: 50%;
+           margin: 0 auto;
+           text-align: center;
+            flex-direction: column;
+            .contactBox {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 5rem;
+                h4 {
+                    color:white;
+                    margin-bottom: 1rem;
+                    font-size: $h4fontSize;
+                    font-size: 2rem;
+                }
+                a {
+                    text-decoration: none;
+                    color: white;
+                    line-height: 2rem;
+                    font-size: 2rem;
+                    font-size: $h4fontSize;
+                    img {
+                        vertical-align: middle;
+                        margin-right: 1rem;
+                      }
+                }
+                address{
+                    color: white;
+                    line-height: 2rem;
+                    font-size: $h4fontSize;
+                    font-size: 2rem;
+                    img {
+                        vertical-align: middle;
+                      margin-right: 1rem;
+                    }
+                }
+    
+            }
+           }
+    
+           .footerSection2 {
+               width: 60%;
+               margin: 0 auto;
+               display: flex;
+               flex-direction: column;
+               text-align: center;
+               color: white;
+               ul {
+                   margin: 0 auto;
+                   display: flex;
+                   margin-bottom: 3rem;
+                   margin-top: 3rem;
+                   li {
+                       margin-right: 1rem;
+                       font-size: 2rem;
+                   }
+               }
+    
+               .Socials {
+                a {
+                    margin-right: 2rem;
+                    cursor: pointer;
+                }
+               }
+           }
+      
+        }
+        p{
+            font-weight: bold;
+            font-size: 2rem;
+            color: white;
+        }
+    }
+    
+  }
