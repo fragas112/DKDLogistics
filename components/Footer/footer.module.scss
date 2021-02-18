@@ -11,16 +11,19 @@
     .contentWrapper{
 
        .footerSection1{
-                   
-       display: flex;
-       width: 60%;
-       margin: 0 auto;
-       margin-bottom: 3rem;
-       justify-content: space-between;
+        display: flex;
+        width: 60%;
+        margin: 0 18.5%;
+        margin-bottom: 3rem;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        /* justify-content: space-between; */
+        place-content: center;
         .contactBox {
             display: flex;
             flex-direction: column;
-            h4 {
+            h3 {
+                font-family: Dosis, arial, sans-serif;
                 color:white;
                 margin-bottom: 1rem;
                 font-size: $h4fontSize;
@@ -65,6 +68,10 @@
             a {
                 margin-right: 2rem;
                 cursor: pointer;
+            }
+            img {
+                width: 30px;
+                height: 30px;
             }
            }
        }

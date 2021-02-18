@@ -1,10 +1,71 @@
 .contentContainer {
-  background-color: #383838;
+  background: url("../../assets/footerBackground.webp");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
   margin: 0 auto;
+  padding: 5rem 0;
 }
-.contentContainer .contentWrapper {
-  padding: 10rem 0;
-  text-align: center;
+.contentContainer .contentWrapper .footerSection1 {
+  display: flex;
+  width: 60%;
+  margin: 0 18.5%;
+  margin-bottom: 3rem;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  /* justify-content: space-between; */
+  place-content: center;
+}
+.contentContainer .contentWrapper .footerSection1 .contactBox {
+  display: flex;
+  flex-direction: column;
+}
+.contentContainer .contentWrapper .footerSection1 .contactBox h3 {
+  font-family: Dosis, arial, sans-serif;
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+.contentContainer .contentWrapper .footerSection1 .contactBox a {
+  text-decoration: none;
+  color: white;
+  line-height: 2rem;
+  font-size: 1.4rem;
+}
+.contentContainer .contentWrapper .footerSection1 .contactBox a img {
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+.contentContainer .contentWrapper .footerSection1 .contactBox address {
+  color: white;
+  line-height: 2rem;
+  font-size: 1.4rem;
+}
+.contentContainer .contentWrapper .footerSection1 .contactBox address img {
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+.contentContainer .contentWrapper .footerSection2 {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.contentContainer .contentWrapper .footerSection2 ul {
+  display: flex;
+}
+.contentContainer .contentWrapper .footerSection2 ul li {
+  margin-right: 1rem;
+}
+.contentContainer .contentWrapper .footerSection2 .Socials a {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.contentContainer .contentWrapper .footerSection2 .Socials img {
+  width: 30px;
+  height: 30px;
 }
 .contentContainer p {
   font-weight: bold;

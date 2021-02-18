@@ -1,0 +1,49 @@
+@import "../assets/sass/variables.scss";
+
+.container {
+    background: url('../../assets/lettalkabout.webp');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 5rem 0;
+
+    .wrapper {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        @media (max-width:425px){
+            width: 90%;
+        }
+        .fontContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+        .lineWithText{
+            display: flex;
+            vertical-align: center;
+            align-items: center;
+            span {
+                font-size: 3rem;
+                padding: 0 1rem;
+                color: white;
+            }
+        }
+        h3{
+            font-family: $mainFamily;
+            font-size: $h2fontSize;
+            color: $white;
+            padding: 3rem 0;
+        }
+        p{
+            line-height: 1.5;
+            font-family: $paragraph;
+            font-size: $font-size-14px;
+            color: $white;
+        }
+    }
+}
