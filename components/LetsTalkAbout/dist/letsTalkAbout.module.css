@@ -1,0 +1,47 @@
+.container {
+  background: url("../../assets/lettalkabout.webp");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+.container .wrapper {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+@media (max-width: 425px) {
+  .container .wrapper {
+    width: 90%;
+  }
+}
+.container .wrapper .fontContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .wrapper .lineWithText {
+  display: flex;
+  vertical-align: center;
+  align-items: center;
+}
+.container .wrapper .lineWithText span {
+  font-size: 3rem;
+  padding: 0 1rem;
+  color: white;
+}
+.container .wrapper h3 {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 3.3rem;
+  color: white;
+  padding: 3rem 0;
+}
+.container .wrapper p {
+  line-height: 1.5;
+  font-family: Open Sans;
+  font-size: 1.4rem;
+  color: white;
+}

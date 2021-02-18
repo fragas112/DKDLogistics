@@ -21,6 +21,11 @@
 .Layout .textCollectionLandingPage img {
   width: 50%;
 }
+@media (max-width: 425px) {
+  .Layout .textCollectionLandingPage img {
+    width: 100%;
+  }
+}
 .Layout .textCollectionLandingPage h1 {
   padding: 2rem 0;
   font-family: fantasy;
