@@ -18,6 +18,7 @@
         transform: scale(1.1)
       }
     }
+ 
 
 
   }
@@ -28,8 +29,8 @@
     flex: 1;
     justify-content: flex-end;
     li {
-      padding: 0 1rem;
-      font-size: $font-size-14px;
+      padding: 0.3rem;
+      font-size: $font-size-18px;
       color: $white;
       font-weight: bold;
       cursor: pointer;
@@ -42,14 +43,27 @@
       background-size: 200% 100%;
       background-position: 100%;
       transition: background-position 400ms ease;
+
       &:hover{
         background-position: 0 100%;
       }
-
+     .langLogo{
+          margin: 0.5rem 0.5rem;
+          width: 2rem;
+          height: 1.3rem;
+          margin: 0 auto;
+      }
     }
-    @media (max-width:799px){
+    @media (max-width:740px){
       display: flex;
+    
+
+      
     }
+    @media (max-width:425px){
+      font-size: $font-size-16px;
+    }
+    
   }
   .navitemsVisable {
     display: flex;
@@ -74,10 +88,17 @@
       &:hover{
         background-position: 0 100%;
       }
-      @media (max-width:800px){
+      .langLogo{
+
+      }
+      @media (max-width:741px){
         display: none;
       }
-
+      .langLogo{
+          width: 2rem;
+          height: 1.3rem;
+      }
     }
+    
   }
 }

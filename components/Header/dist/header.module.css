@@ -24,8 +24,8 @@
   justify-content: flex-end;
 }
 .container .navitems li {
-  padding: 0 1rem;
-  font-size: 1.4rem;
+  padding: 0.3rem;
+  font-size: 1.8rem;
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -42,9 +42,20 @@
 .container .navitems li:hover {
   background-position: 0 100%;
 }
-@media (max-width: 799px) {
+.container .navitems li .langLogo {
+  margin: 0.5rem 0.5rem;
+  width: 2rem;
+  height: 1.3rem;
+  margin: 0 auto;
+}
+@media (max-width: 740px) {
   .container .navitems {
     display: flex;
+  }
+}
+@media (max-width: 425px) {
+  .container .navitems {
+    font-size: 1.6rem;
   }
 }
 .container .navitemsVisable {
@@ -72,8 +83,12 @@
 .container .navitemsVisable li:hover {
   background-position: 0 100%;
 }
-@media (max-width: 800px) {
+@media (max-width: 741px) {
   .container .navitemsVisable li {
     display: none;
   }
+}
+.container .navitemsVisable li .langLogo {
+  width: 2rem;
+  height: 1.3rem;
 }

@@ -23,13 +23,13 @@
     transition: all ease 0.5s;
   }
   .BurgerMenu__container .open:nth-child(1) {
-    transform: rotate(45deg) translateY(2px) translateX(2px);
+    transform: rotate(45deg) translateY(2px) translateX(0px);
   }
   .BurgerMenu__container .open:nth-child(2) {
     opacity: 0;
   }
   .BurgerMenu__container .open:nth-child(3) {
-    transform: rotate(-45deg) translateY(-8px) translateX(8px);
+    transform: rotate(-45deg) translateY(-8px) translateX(6px);
   }
   .BurgerMenu__container .close:nth-child(1) {
     transform: rotate(0) translateY(0);

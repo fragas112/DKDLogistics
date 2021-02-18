@@ -10,7 +10,7 @@ const LetsTalkAbout = () => {
 				<AliceCarousel
 					controlsStrategy="responsive"
 					autoPlay
-					autoPlayInterval="5000"
+					autoPlayInterval="4000"
 					autoPlayDirection="rtl"
 					disableDotsControls="true"
 					disableButtonsControls="true"
