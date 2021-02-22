@@ -19,20 +19,22 @@
         -moz-box-pack: justify;
         /* justify-content: space-between; */
         place-content: center;
+        text-align: center;
         .contactBox {
             display: flex;
             flex-direction: column;
-            h3 {
-                font-family: Dosis, arial, sans-serif;
+            color: white;
+            h4 {
                 color:white;
                 margin-bottom: 1rem;
-                font-size: $h4fontSize;
+                font-size: 2rem;
+                line-height: 2;
             }
             a {
                 text-decoration: none;
                 color: white;
-                line-height: 2rem;
-                font-size: $h4fontSize;
+                line-height: 2;
+                font-size: $font-size-16px;
                 img {
                     vertical-align: middle;
                     margin-right: 1rem;
@@ -40,8 +42,8 @@
             }
             address{
                 color: white;
-                line-height: 2rem;
-                font-size: $h4fontSize;
+                line-height: 2;
+                font-size: $font-size-16px;
                 img {
                     vertical-align: middle;
                   margin-right: 1rem;

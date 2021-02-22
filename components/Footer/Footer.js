@@ -21,14 +21,14 @@ const ContactForm = () => {
 							</a>
 						</div> */}
 						<div className={classes.contactBox}>
-							<h4>Central America Office</h4>
+							<h4>CONTACTS</h4>
 							<address>
 								<img src="/location.png"></img>
-								Some Street, No. 100
+								7545 S MADISON ST,SUITE 301 Burr Ridge, IL, US 60527
 							</address>
 							<a href="tel:123-456-7890">
 								<img src="/phone.png"></img>
-								123-456-7890
+								+1 708-870-2581
 							</a>
 							<a href="mailto: abc@example.com">
 								<img src="/email.png"></img>
@@ -55,9 +55,6 @@ const ContactForm = () => {
 					<div className={classes.footerSection2}>
 						<span>© 2021 DKD Logistics</span>
 						<ul>
-							<li>Web design</li>
-							<li>Development</li>
-							<li>Hosting</li>
 						</ul>
 						<div className={classes.Socials}>
 							<a href="https://www.facebook.com/dkdlogistics">

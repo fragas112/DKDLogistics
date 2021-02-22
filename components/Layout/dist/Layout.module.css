@@ -23,7 +23,7 @@
 }
 @media (max-width: 425px) {
   .Layout .textCollectionLandingPage img {
-    width: 100%;
+    display: none;
   }
 }
 .Layout .textCollectionLandingPage h1 {
