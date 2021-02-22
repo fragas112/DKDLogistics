@@ -76,7 +76,7 @@
 
 @media only screen and (max-width: 780px) {
   .container {
-    height: 30vh;
+    height: 42vh;
 
     .wrapper {
 
@@ -92,9 +92,7 @@
   }
 
 }
-
 @media only screen and (max-width: 540px) {
-
   .container {
     height: 95vh;
 
@@ -103,18 +101,19 @@
       display: flex;
       flex-wrap: wrap;
 
-    p {
-      font-size: 1.3rem;
-    }
-    .card {
-      margin: 0;
+      p {
+        font-size: 1.3rem;
+      }
 
-      .circle1 {
-        margin: 0 9rem;
-        padding: 4rem 4rem;
+      .card {
+        margin: 0;
+
+        .circle1 {
+          margin: 0 9rem;
+          padding: 4rem 4rem;
+        }
       }
     }
-  }
 
   }
 }

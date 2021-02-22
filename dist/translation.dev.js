@@ -7,10 +7,10 @@ exports.ru = exports.enUS = void 0;
 var enUS = {
   //Navigation
   home: "Home",
-  service: "Service",
+  service: "About Us",
   carrier: "Carrier",
   //HeroBanner
-  heroTitle: "The best is atleast what we can do",
+  heroTitle: "THE BEST IS THE LEAST WE CAN DO",
   heroContentText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque eros eget dui porta, eu pretium purus laoreet. Etiam sed mauris lacinia, varius lacus sit amet, pretium ligula.",
   heroSeeMore: "See More",
   featureBoxText1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque eros eget dui porta, eu pretium purus laoreet. Etiam sed mauris lacinia, varius lacus sit amet, pretium ligula.",
