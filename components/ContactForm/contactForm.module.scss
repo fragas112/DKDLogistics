@@ -24,6 +24,8 @@
         position: relative;
         transition: all ease 1s;
 
+
+
         h2 {
             display: block;
             width: 100%;
@@ -89,7 +91,15 @@
 
         }
     }
-
+    .success{
+        color: white;
+        text-align: center;
+        /* display: flex; */
+        /* justify-content: center; */
+        position: absolute;
+        top: 26%;
+        font-size: 22px;
+    }
     .closeBtn {
         color: #333333;
         font-size: $font-size-14px;

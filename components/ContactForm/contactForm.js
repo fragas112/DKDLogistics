@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import classes from './contactForm.module.scss';
 
 const ContactForm = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [formData, setFormData] = useState({});
+	const [submitted, setSubmitted] = useState(false);
 
 	const togglePopup = () => {
 		setIsOpen(!isOpen);
@@ -17,6 +17,7 @@ const ContactForm = () => {
 	};
 	const handleSubmit = (event) => {
 		event.preventDefault();
+		setSubmitted(true);
 		sendEmail();
 		togglePopup();
 		setFormData({
@@ -26,20 +27,22 @@ const ContactForm = () => {
 		});
 	};
 	const sendEmail = () => {
-	    fetch('/contact', {
+		fetch('/contact', {
 			method: 'post',
 			headers: {
-			  'Accept': 'application/json, text/plain, */*',
-			  'Content-Type': 'application/json'
+				Accept: 'application/json, text/plain, */*',
+				'Content-Type': 'application/json',
 			},
-			body: JSON.stringify(formData)
-		}).then((res) => {
-			res.status === 200 ? this.setState({ submitted: true }) : ''
+			body: JSON.stringify(formData),
+		})
+			.then((res) => {
+				res.status === 200 ? 'Message have been sent!' : 'Something went wrong...';
 			})
 			.catch((error) => {
 				console.log(error);
 			});
 	};
+	console.log(formData.name);
 	return (
 		<>
 			<div className={classes.contentContainer}>
@@ -49,9 +52,9 @@ const ContactForm = () => {
 							<button onClick={togglePopup} className={classes.closeBtn}>
 								X
 							</button>
-							<h2>Contact Us</h2>
+							<h2>Apply Now</h2>
 							<form onSubmit={handleSubmit}>
-								<span className={classes.inputName}>Your Name</span>
+								<span className={classes.inputName}>Your Full Name</span>
 								<input
 									type="text"
 									name="name"
@@ -60,6 +63,7 @@ const ContactForm = () => {
 									value={formData.name || ''}
 									required
 								/>
+
 								<span className={classes.inputName}>Your Email</span>
 								<input
 									type="email"
@@ -67,15 +71,18 @@ const ContactForm = () => {
 									placeholder="Email"
 									onChange={updateInput}
 									value={formData.email || ''}
+									required
 								/>
-								<span className={classes.inputName}>Your Message</span>
+								<span className={classes.inputName}>Message About You</span>
 								<textarea
 									type="text"
 									name="message"
 									placeholder="Your message here..."
 									onChange={updateInput}
 									value={formData.message || ''}
+									required
 								></textarea>
+
 								<button className={classes.submitBtn} type="submit">
 									Submit
 								</button>
@@ -83,8 +90,14 @@ const ContactForm = () => {
 						</div>
 					) : (
 						<div className={classes.pointer}>
-							<div onClick={togglePopup} className={classes.logoText}>
-								<i className="fa fa-envelope"></i>
+							<div>
+								{submitted === true ? (
+									<div className={classes.success}>Success! Thank you for applying! We will contact you!</div>
+								) : (
+									<div onClick={togglePopup} className={classes.logoText}>
+										<i className="fa fa-envelope"></i>
+									</div>
+								)}
 							</div>
 						</div>
 					)}
