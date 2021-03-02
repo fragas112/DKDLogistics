@@ -12,7 +12,7 @@ export default function Layout (props){
       <div className={classes.logoIntoGif}>
         {props.children}
         <div className={classes.textCollectionLandingPage}>
-          <img src={newlanding}/>
+          <img src={newlanding} alt="Truck Image"/>
           <h1>{t.heroTitle}</h1>
           <p>
             {t.heroContentText}

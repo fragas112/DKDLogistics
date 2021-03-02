@@ -15,7 +15,11 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-
+.succBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
     .backgroundForm {
         opacity: 1;
         padding: 5rem 10rem;
@@ -91,14 +95,11 @@
 
         }
     }
+  
     .success{
         color: white;
         text-align: center;
-        /* display: flex; */
-        /* justify-content: center; */
-        position: absolute;
-        top: 26%;
-        font-size: 22px;
+        font-size: $font-size-28px;
     }
     .closeBtn {
         color: #333333;
@@ -175,15 +176,6 @@
 }
 
 
-
-.pointer span {
-    color: #fff;
-    text-align: center;
-    display: block;
-    width: 31px;
-    padding: 5px 0px;
-    transition: all ease 1s;
-}
 
 .text {
     -webkit-transform: scaleY(0);

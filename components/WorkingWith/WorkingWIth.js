@@ -29,12 +29,12 @@ const WorkingWith = () => {
 						autoHeight="true"
 						infinite
 					>
-						<img src={logo1} className={classes.sliderimg} />
-						<img src={logo2} className={classes.sliderimg} />
-						<img src={logo1} className={classes.sliderimg} />
-						<img src={logo2} className={classes.sliderimg} />
-						<img src={logo1} className={classes.sliderimg} />
-						<img src={logo1} className={classes.sliderimg} />
+						<img alt="Partners LOGO" src={logo1} className={classes.sliderimg} />
+						<img alt="Partners LOGO" src={logo2} className={classes.sliderimg} />
+						<img alt="Partners LOGO" src={logo1} className={classes.sliderimg} />
+						<img alt="Partners LOGO" src={logo2} className={classes.sliderimg} />
+						<img alt="Partners LOGO" src={logo1} className={classes.sliderimg} />
+						<img alt="Partners LOGO" src={logo1} className={classes.sliderimg} />
 					</AliceCarousel>
 				</div>
 			</div>

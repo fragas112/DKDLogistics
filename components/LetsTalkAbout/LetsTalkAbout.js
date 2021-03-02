@@ -20,7 +20,7 @@ const LetsTalkAbout = () => {
 				>
 					<div className={classes.fontContainer}>
 						<a>
-							<img src=""></img>
+							<img src="" alt="Person"></img>
 						</a>
 						<h3>Drivers Talk</h3>
 						<p>
@@ -39,7 +39,7 @@ const LetsTalkAbout = () => {
 					</div>
 					<div className={classes.fontContainer}>
 						<a>
-							<img src=""></img>
+							<img src="" alt="Person"></img>
 						</a>
 						<h3>Drivers Talk</h3>
 						<p>
