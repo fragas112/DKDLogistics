@@ -1,14 +1,19 @@
+import dynamic from 'next/dynamic'
+
 import classes from '../components/assets/sass/Home.module.scss';
 import Header from '../components/Header/Header';
-import Feature from '../components/Feature/Feature';
-import AboutUs from '../components/AboutUs/AboutUs';
-import WorkingWith from '../components/WorkingWith/WorkingWIth';
 import Layout from '../components/Layout/Layout';
-import ContactForm from '../components/ContactForm/contactForm';
-import Footer from '../components/Footer/Footer';
-import LetsTalkAbout from '../components/LetsTalkAbout/LetsTalkAbout';
 
 export default function Home() {
+	const WorkingWith = dynamic(()=> import('../components/WorkingWith/WorkingWIth'), { loading: () => <p>...</p>})
+	const LetsTalkAbout = dynamic(()=> import('../components/LetsTalkAbout/LetsTalkAbout'), { loading: () => <p>...</p>})
+	const ContactForm = dynamic(() => import('../components/ContactForm/contactForm'), { loading: () => <p>...</p>})
+	const Footer = dynamic(() => import('../components/Footer/Footer'), { loading: () => <p>...</p>})
+	const AboutUs = dynamic(() => import('../components/AboutUs/AboutUs'), { loading: () => <p>...</p>})
+	const Feature = dynamic(() => import('../components/Feature/Feature'), { loading: () => <p>...</p>})
+
+
+
 	return (
 		<>
 			<link

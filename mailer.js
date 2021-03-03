@@ -31,8 +31,8 @@ oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
                 }
               })
               
-              const send = ({ email, name, text }) => {
-                const from = name && email ? `${name} <${email}>` : `${name || email}`
+              const send = ({ email, name, surname, text }) => {
+                const from = name && email  ? `${name} <${email}>` : `${name || email}`
                 const message = {
                   from,
                   to: 'willie@dkdlogistics.com',
@@ -43,7 +43,7 @@ oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
               
                 return new Promise((resolve, reject) => {
                   transporter.sendMail(message, (error, info) =>
-                    error ? reject(error) : resolve(info)
+                    error ? reject(error) : resolve("Email sen: " + info.response)
                   )
                 })
               }

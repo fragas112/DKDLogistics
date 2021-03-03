@@ -43,6 +43,7 @@ var transporter = nodemailer.createTransport({
 var send = function send(_ref) {
   var email = _ref.email,
       name = _ref.name,
+      surname = _ref.surname,
       text = _ref.text;
   var from = name && email ? "".concat(name, " <").concat(email, ">") : "".concat(name || email);
   var message = {
@@ -54,7 +55,7 @@ var send = function send(_ref) {
   };
   return new Promise(function (resolve, reject) {
     transporter.sendMail(message, function (error, info) {
-      return error ? reject(error) : resolve(info);
+      return error ? reject(error) : resolve("Email sen: " + info.response);
     });
   });
 };

@@ -1,6 +1,7 @@
 @import "../assets/sass/variables.scss";
 
 .container {
+  scroll-behavior: smooth;
   background-color: #b73539;
   font-family: $font-display;
   padding-top: 9rem;
@@ -36,7 +37,7 @@
 
     }
 
-    h4 {
+    h3 {
       font-family: 'Maven Pro', sans-serif;
       font-size: $font-size-15px;
       font-weight: bold;

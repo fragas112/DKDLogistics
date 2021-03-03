@@ -3,8 +3,8 @@ import Link from 'next/link';
 import Logo from '../../assets/logo2.webp';
 import { useRouter } from 'next/router';
 import { enUS, ru } from '../../translation';
-import USAFlag from "../../public/usa.webp"
-import RUFLAG from "../../public/ru.webp"
+import USAFlag from '../../public/usa.webp';
+import RUFLAG from '../../public/ru.webp';
 
 import MobileNav from '../Header/MobileNav/MobileNav';
 import MobileNavList from './MobileNavList/MobileNavList';
@@ -26,27 +26,47 @@ export default function Header() {
 		<div className={classes.container}>
 			<nav>
 				<Link href="/">
-					<img className={classes.logo} src={Logo}></img>
+					<img className={classes.logo} src={Logo} alt="Company Logo DKD Logistics"></img>
 				</Link>
 				<ul className={classes.navitemsVisable}>
-						<li href="/">{t.home}</li>
-						<li href="/">{t.service}</li>
-						<li href="/">{t.carrier}</li>
-						<li onClick={() => changeLanguage('en')}><img className={classes.langLogo} src={USAFlag}></img></li>
+					<li>
+						<a href="/">{t.home}</a>
+					</li>
+					<li>
+						<a href="#aboutUs">{t.service}</a>
+					</li>
+					<li>
+						<a href="#contentForm">{t.carrier}</a>
+					</li>
+					<li onClick={() => changeLanguage('en')}>
+						<img className={classes.langLogo} src={USAFlag} alt="USA flag"></img>
+					</li>
 
-						<li onClick={() => changeLanguage('ru')}><img className={classes.langLogo} src={RUFLAG}></img></li>
+					<li onClick={() => changeLanguage('ru')}>
+						<img className={classes.langLogo} src={RUFLAG} alt="Russian flag"></img>
+					</li>
 				</ul>
 
 				<ul className={classes.navitems}>
 					<MobileNav>
 						<MobileNavList>
 							<NavLinkItem>
-								<li href="/">{t.home}</li>
-								<li href="/">{t.service}</li>
-								<li href="/">{t.carrier}</li>
-								<li onClick={() => changeLanguage('en')}><img className={classes.langLogo} src={USAFlag}></img></li>
+								<li>
+									<a href="/">{t.home}</a>
+								</li>
+								<li>
+									<a href="#aboutUs">{t.service}</a>
+								</li>
+								<li>
+									<a href="#contentForm">{t.carrier}</a>
+								</li>
+								<li onClick={() => changeLanguage('en')}>
+									<img className={classes.langLogo} alt="USA flag" src={USAFlag}></img>
+								</li>
 
-								<li onClick={() => changeLanguage('ru')}><img className={classes.langLogo} src={RUFLAG}></img></li>
+								<li onClick={() => changeLanguage('ru')}>
+									<img className={classes.langLogo} alt="Russian flag" src={RUFLAG}></img>
+								</li>
 							</NavLinkItem>
 						</MobileNavList>
 					</MobileNav>

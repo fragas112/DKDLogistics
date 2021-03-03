@@ -15,7 +15,11 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-
+.succBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
     .backgroundForm {
         opacity: 1;
         padding: 5rem 10rem;
@@ -23,6 +27,8 @@
         background-color: white;
         position: relative;
         transition: all ease 1s;
+
+
 
         h2 {
             display: block;
@@ -89,7 +95,12 @@
 
         }
     }
-
+  
+    .success{
+        color: white;
+        text-align: center;
+        font-size: $font-size-28px;
+    }
     .closeBtn {
         color: #333333;
         font-size: $font-size-14px;
@@ -165,15 +176,6 @@
 }
 
 
-
-.pointer span {
-    color: #fff;
-    text-align: center;
-    display: block;
-    width: 31px;
-    padding: 5px 0px;
-    transition: all ease 1s;
-}
 
 .text {
     -webkit-transform: scaleY(0);

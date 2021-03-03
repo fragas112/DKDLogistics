@@ -12,6 +12,11 @@
   flex-direction: column;
   align-content: center;
 }
+.contentWrapper .succBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .contentWrapper .backgroundForm {
   opacity: 1;
   padding: 5rem 10rem;
@@ -73,6 +78,11 @@
 }
 .contentWrapper textarea:focus {
   border-bottom: 2px solid #ff4b5a;
+}
+.contentWrapper .success {
+  color: white;
+  text-align: center;
+  font-size: 2.8rem;
 }
 .contentWrapper .closeBtn {
   color: #333333;
@@ -140,15 +150,6 @@
   display: flex;
   margin-top: 2.5rem;
   justify-content: center;
-}
-
-.pointer span {
-  color: #fff;
-  text-align: center;
-  display: block;
-  width: 31px;
-  padding: 5px 0px;
-  transition: all ease 1s;
 }
 
 .text {
