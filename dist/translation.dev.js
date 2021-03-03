@@ -12,7 +12,7 @@ var enUS = {
   //HeroBanner
   heroTitle: "THE BEST IS THE LEAST WE CAN DO",
   heroContentText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque eros eget dui porta, eu pretium purus laoreet. Etiam sed mauris lacinia, varius lacus sit amet, pretium ligula.",
-  heroSeeMore: "See More",
+  heroSeeMore: "Apply Now",
   featureBoxText1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque eros eget dui porta, eu pretium purus laoreet. Etiam sed mauris lacinia, varius lacus sit amet, pretium ligula.",
   featureBoxText2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque eros eget dui porta, eu pretium purus laoreet. Etiam sed mauris lacinia, varius lacus sit amet, pretium ligula.",
   featureBoxText3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque eros eget dui porta, eu pretium purus laoreet. Etiam sed mauris lacinia, varius lacus sit amet, pretium ligula.",
