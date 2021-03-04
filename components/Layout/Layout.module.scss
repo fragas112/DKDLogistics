@@ -25,11 +25,11 @@
     width: 80%;
     img {
       width: 50%;
-      @media (max-width:425px){
+      @media (max-width: 425px) {
         display: none;
       }
     }
-    
+
     h1 {
       padding: 2rem 0;
       font-family: fantasy;
@@ -39,6 +39,9 @@
       text-align: center;
       color: $white;
       text-transform: uppercase;
+      @media (max-width: 768px) {
+        font-size: 5.8rem;
+      }
     }
     p {
       font-family: $mainFamily;
@@ -49,6 +52,9 @@
       color: $white;
       text-align: center;
       padding: 2rem;
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
     }
     button {
       padding: 1.5rem 5rem;
@@ -58,7 +64,9 @@
       margin: 0 auto;
       font-size: $font-size-13px;
       transition: 0.8s;
-      
+      @media (max-width: 768px) {
+        font-size: 1.8rem;
+      }
       &:hover {
         background-color: #b73539;
         color: white;

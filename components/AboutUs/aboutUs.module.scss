@@ -10,7 +10,6 @@
     max-width: 67%;
     margin: 0 auto;
     position: relative;
-
   }
 
   .bigTruckLogo {
@@ -29,31 +28,39 @@
     color: white;
 
     h2 {
-      font-family: 'Maven Pro', sans-serif;
+      font-family: "Maven Pro", sans-serif;
       font-size: $h2fontSize;
       width: 85%;
       padding: 2rem 0;
       text-align: center;
-
+      @media (max-width: 768px) {
+        font-size: 4rem;
+      }
     }
 
     h3 {
-      font-family: 'Maven Pro', sans-serif;
+      font-family: "Maven Pro", sans-serif;
       font-size: $font-size-15px;
       font-weight: bold;
       padding: 3rem;
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
     }
 
     p {
-      font-family: 'Maven Pro', sans-serif;
+      font-family: "Maven Pro", sans-serif;
       font-size: $font-size-15px;
       text-align: center;
       line-height: 1.4;
       padding: 1rem 0;
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
     }
 
     button {
-      font-family: 'Maven Pro', sans-serif;
+      font-family: "Maven Pro", sans-serif;
       padding: 1.5rem 5rem;
       border-radius: 2rem;
       border-style: none;
@@ -64,19 +71,22 @@
       font-size: $font-size-13px;
       transition: 0.8s;
 
+      @media (max-width: 768px) {
+        font-size: 1.6rem;
+      }
+
       &:hover {
         background-color: $white;
         color: black;
       }
     }
-
   }
 
   .aboutUsImageContainer {
     padding-top: 2rem;
     overflow: hidden;
     transition-duration: 1s;
-    font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
 
     .sideImages {
       flex-basis: 100%;
@@ -168,20 +178,17 @@
   }
 }
 @media only screen and (max-width: 1024px) {
-
   .container {
     .wrapper {
       max-width: 100%;
       .aboutUsTextContainer {
         margin: 0 10%;
       }
-
     }
   }
 }
 
 @media only screen and (max-width: 540px) {
-
   .container {
     .wrapper {
       max-width: none;
@@ -201,7 +208,6 @@
 
         .aboutUsImageContainer3 {
           width: auto;
-
         }
       }
     }

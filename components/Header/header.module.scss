@@ -1,10 +1,10 @@
 @import "../assets/sass/variables.scss";
 
 .container {
-    padding: 1rem 4rem;
-    font-family: $mainFamily;
-    background-color: $black;
-    opacity: 0.7;
+  padding: 1rem 4rem;
+  font-family: $mainFamily;
+  background-color: $black;
+  opacity: 0.7;
 
   nav {
     max-width: 67%;
@@ -14,13 +14,10 @@
     img {
       transition: 0.8s;
       cursor: pointer;
-      &:hover{
-        transform: scale(1.1)
+      &:hover {
+        transform: scale(1.1);
       }
     }
- 
-
-
   }
 
   .navitems {
@@ -28,6 +25,7 @@
     align-items: center;
     flex: 1;
     justify-content: flex-end;
+
     li {
       padding: 0.3rem;
       font-size: $font-size-18px;
@@ -44,26 +42,26 @@
       background-position: 100%;
       transition: background-position 400ms ease;
 
-      &:hover{
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+      &:hover {
         background-position: 0 100%;
       }
-     .langLogo{
-          margin: 0.5rem 0.5rem;
-          width: 2rem;
-          height: 1.3rem;
-          margin: 0 auto;
+
+      .langLogo {
+        margin: 0.5rem 0.5rem;
+        width: 2rem;
+        height: 1.3rem;
+        margin: 0 auto;
       }
     }
-    @media (max-width:740px){
+    @media (max-width: 740px) {
       display: flex;
-    
-
-      
     }
-    @media (max-width:425px){
+    @media (max-width: 425px) {
       font-size: $font-size-16px;
     }
-    
   }
   .navitemsVisable {
     display: flex;
@@ -85,20 +83,21 @@
       background-size: 200% 100%;
       background-position: 100%;
       transition: background-position 400ms ease;
-      &:hover{
+      &:hover {
         background-position: 0 100%;
       }
-      .langLogo{
-
+      .langLogo {
       }
-      @media (max-width:741px){
+      @media (max-width: 768px) {
+        font-size: 1.8rem;
+      }
+      @media (max-width: 741px) {
         display: none;
       }
-      .langLogo{
-          width: 2rem;
-          height: 1.3rem;
+      .langLogo {
+        width: 2rem;
+        height: 1.3rem;
       }
     }
-    
   }
 }
