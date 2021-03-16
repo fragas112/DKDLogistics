@@ -11,7 +11,6 @@ import MobileNavList from "./MobileNavList/MobileNavList";
 import NavLinkItem from "./MobileNavItem/MobileNavItem";
 export default function Header() {
   const router = useRouter();
-  //Language Configs and Locale
   const { locale } = router;
   const t = locale === "en-US" ? enUS : ru;
   const changeLanguage = (lang) => {
@@ -34,12 +33,12 @@ export default function Header() {
         </Link>
         <ul
           className={classes.navitemsVisable}
-          itemscope
+          itemScope
           itemtype="https://schema.org/BreadcrumbList"
         >
           <li
             itemprop="itemListElement"
-            itemscope
+            itemScope
             itemtype="https://schema.org/ListItem"
           >
             <a href="/" itemprop="item">
@@ -48,7 +47,7 @@ export default function Header() {
           </li>
           <li
             itemprop="itemListElement"
-            itemscope
+            itemScope
             itemtype="https://schema.org/ListItem"
           >
             <a href="#aboutUs" itemprop="item">
@@ -57,7 +56,7 @@ export default function Header() {
           </li>
           <li
             itemprop="itemListElement"
-            itemscope
+            itemScope
             itemtype="https://schema.org/ListItem"
           >
             <a href="#contentForm" itemprop="item">
@@ -67,7 +66,7 @@ export default function Header() {
           <li
             onClick={() => changeLanguage("en")}
             itemprop="itemListElement"
-            itemscope
+            itemScope
             itemtype="https://schema.org/ListItem"
           >
             <img
@@ -80,7 +79,7 @@ export default function Header() {
           <li
             onClick={() => changeLanguage("ru")}
             itemprop="itemListElement"
-            itemscope
+            itemScope
             itemtype="https://schema.org/ListItem"
           >
             <img
@@ -97,7 +96,7 @@ export default function Header() {
               <NavLinkItem>
                 <li
                   itemprop="itemListElement"
-                  itemscope
+                  itemScope
                   itemtype="https://schema.org/ListItem"
                 >
                   <a href="/" itemprop="item">
@@ -106,7 +105,7 @@ export default function Header() {
                 </li>
                 <li
                   itemprop="itemListElement"
-                  itemscope
+                  itemScope
                   itemtype="https://schema.org/ListItem"
                 >
                   <a href="#aboutUs" itemprop="item">
@@ -115,7 +114,7 @@ export default function Header() {
                 </li>
                 <li
                   itemprop="itemListElement"
-                  itemscope
+                  itemScope
                   itemtype="https://schema.org/ListItem"
                 >
                   <a href="#contentForm" itemprop="item">
@@ -125,7 +124,7 @@ export default function Header() {
                 <li
                   onClick={() => changeLanguage("en")}
                   itemprop="itemListElement"
-                  itemscope
+                  itemScope
                   itemtype="https://schema.org/ListItem"
                 >
                   <img
@@ -138,7 +137,7 @@ export default function Header() {
                 <li
                   onClick={() => changeLanguage("ru")}
                   itemprop="itemListElement"
-                  itemscope
+                  itemScope
                   itemtype="https://schema.org/ListItem"
                 >
                   <img

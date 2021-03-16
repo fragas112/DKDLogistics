@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 
 const ContactForm = () => {
   const router = useRouter();
-  //Language Configs and Locale
   const { locale } = router;
   const t = locale === "en-US" ? enUS : ru;
   return (
@@ -15,7 +14,7 @@ const ContactForm = () => {
             <div
               className={classes.contactBox}
               itemprop="address"
-              itemscope
+              itemScope
               itemtype="https://schema.org/PostalAddress"
             >
               <h3>{t.footerContact}</h3>

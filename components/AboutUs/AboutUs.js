@@ -4,14 +4,12 @@ import { useRouter } from 'next/router';
 
 const Feature = () => {
 	const router = useRouter();
-	//Language Configs and Locale
 	const { locale } = router;
 	const t = locale === 'en-US' ? enUS : ru;
 	return (
 		<section id="aboutUs">
 			<div className={classes.container}>
 				<div className={classes.wrapper}>
-					{/* <img src={bigTruck} className={classes.bigTruckLogo} /> */}
 					<div className={classes.aboutUsTextContainer}>
 						<h3>{t.aboutUsSmallTitle}</h3>
 						<h2>{t.aboutUsMainTitle}</h2>
