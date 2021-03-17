@@ -25,23 +25,38 @@
 }
 .container .aboutUsTextContainer h2 {
   font-family: "Maven Pro", sans-serif;
-  font-size: 3.3rem;
+  font-size: 33px;
   width: 85%;
   padding: 2rem 0;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .container .aboutUsTextContainer h2 {
+    font-size: 4rem;
+  }
+}
 .container .aboutUsTextContainer h3 {
   font-family: "Maven Pro", sans-serif;
-  font-size: 1.5rem;
+  font-size: 15px;
   font-weight: bold;
   padding: 3rem;
 }
+@media (max-width: 768px) {
+  .container .aboutUsTextContainer h3 {
+    font-size: 2rem;
+  }
+}
 .container .aboutUsTextContainer p {
   font-family: "Maven Pro", sans-serif;
-  font-size: 1.5rem;
+  font-size: 15px;
   text-align: center;
   line-height: 1.4;
   padding: 1rem 0;
+}
+@media (max-width: 768px) {
+  .container .aboutUsTextContainer p {
+    font-size: 2rem;
+  }
 }
 .container .aboutUsTextContainer button {
   font-family: "Maven Pro", sans-serif;
@@ -52,8 +67,13 @@
   color: white;
   box-shadow: none;
   margin: 1rem 1rem;
-  font-size: 1.3rem;
+  font-size: 13px;
   transition: 0.8s;
+}
+@media (max-width: 768px) {
+  .container .aboutUsTextContainer button {
+    font-size: 1.6rem;
+  }
 }
 .container .aboutUsTextContainer button:hover {
   background-color: white;
