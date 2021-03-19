@@ -8,7 +8,12 @@
   background-repeat: no-repeat;
   margin: 0 auto;
   padding: 5rem 0;
-
+img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
   .wrapper {
     width: 50%;
     text-align: center;

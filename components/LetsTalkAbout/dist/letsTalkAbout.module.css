@@ -7,6 +7,12 @@
   margin: 0 auto;
   padding: 5rem 0;
 }
+.container img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
 .container .wrapper {
   width: 50%;
   text-align: center;
@@ -39,9 +45,19 @@
   color: white;
   padding: 3rem 0;
 }
+@media (max-width: 768px) {
+  .container .wrapper h3 {
+    font-size: 4rem;
+  }
+}
 .container .wrapper p {
   line-height: 1.5;
   font-family: Open Sans;
   font-size: 1.4rem;
   color: white;
+}
+@media (max-width: 768px) {
+  .container .wrapper p {
+    font-size: 2rem;
+  }
 }

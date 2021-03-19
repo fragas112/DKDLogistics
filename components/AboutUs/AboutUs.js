@@ -14,7 +14,7 @@ const Feature = () => {
 						<h3>{t.aboutUsSmallTitle}</h3>
 						<h2>{t.aboutUsMainTitle}</h2>
 						<p>{t.aboutUsContentText}</p>
-						<button>{t.aboutUsButtonText}</button>
+						{/* <button>{t.aboutUsButtonText}</button> */}
 					</div>
 					<div className={classes.aboutUsImageContainer}>
 						<div className={classes.sideImages}>
