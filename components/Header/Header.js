@@ -34,12 +34,12 @@ export default function Header() {
         <ul
           className={classes.navitemsVisable}
           itemScope
-          itemtype="https://schema.org/BreadcrumbList"
+          itemType="https://schema.org/BreadcrumbList"
         >
           <li
             itemprop="itemListElement"
             itemScope
-            itemtype="https://schema.org/ListItem"
+            itemType="https://schema.org/ListItem"
           >
             <a href="/" itemprop="item">
               {t.home}
@@ -48,7 +48,7 @@ export default function Header() {
           <li
             itemprop="itemListElement"
             itemScope
-            itemtype="https://schema.org/ListItem"
+            itemType="https://schema.org/ListItem"
           >
             <a href="#aboutUs" itemprop="item">
               {t.service}
@@ -57,7 +57,7 @@ export default function Header() {
           <li
             itemprop="itemListElement"
             itemScope
-            itemtype="https://schema.org/ListItem"
+            itemType="https://schema.org/ListItem"
           >
             <a href="#contentForm" itemprop="item">
               {t.carrier}
@@ -67,7 +67,7 @@ export default function Header() {
             onClick={() => changeLanguage("en")}
             itemprop="itemListElement"
             itemScope
-            itemtype="https://schema.org/ListItem"
+            itemType="https://schema.org/ListItem"
           >
             <img
               className={classes.langLogo}
@@ -80,7 +80,7 @@ export default function Header() {
             onClick={() => changeLanguage("ru")}
             itemprop="itemListElement"
             itemScope
-            itemtype="https://schema.org/ListItem"
+            itemType="https://schema.org/ListItem"
           >
             <img
               className={classes.langLogo}
@@ -97,7 +97,7 @@ export default function Header() {
                 <li
                   itemprop="itemListElement"
                   itemScope
-                  itemtype="https://schema.org/ListItem"
+                  itemType="https://schema.org/ListItem"
                 >
                   <a href="/" itemprop="item">
                     {t.home}
@@ -106,7 +106,7 @@ export default function Header() {
                 <li
                   itemprop="itemListElement"
                   itemScope
-                  itemtype="https://schema.org/ListItem"
+                  itemType="https://schema.org/ListItem"
                 >
                   <a href="#aboutUs" itemprop="item">
                     {t.service}
@@ -115,7 +115,7 @@ export default function Header() {
                 <li
                   itemprop="itemListElement"
                   itemScope
-                  itemtype="https://schema.org/ListItem"
+                  itemType="https://schema.org/ListItem"
                 >
                   <a href="#contentForm" itemprop="item">
                     {t.carrier}
@@ -125,7 +125,7 @@ export default function Header() {
                   onClick={() => changeLanguage("en")}
                   itemprop="itemListElement"
                   itemScope
-                  itemtype="https://schema.org/ListItem"
+                  itemType="https://schema.org/ListItem"
                 >
                   <img
                     className={classes.langLogo}
@@ -138,7 +138,7 @@ export default function Header() {
                   onClick={() => changeLanguage("ru")}
                   itemprop="itemListElement"
                   itemScope
-                  itemtype="https://schema.org/ListItem"
+                  itemType="https://schema.org/ListItem"
                 >
                   <img
                     className={classes.langLogo}

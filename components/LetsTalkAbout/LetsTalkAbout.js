@@ -2,6 +2,11 @@ import classes from "./letsTalkAbout.module.scss";
 import AliceCarousel from "react-alice-carousel";
 import { enUS, ru } from "../../translation";
 import { useRouter } from "next/router";
+import  truckDriver  from "../../assets/truckdriver.jpg"
+import  truckDriver1  from "../../assets/truckdriver2.jpg"
+
+
+
 const LetsTalkAbout = () => {
   const router = useRouter();
   //Language Configs and Locale
@@ -18,13 +23,10 @@ const LetsTalkAbout = () => {
           disableDotsControls="true"
           disableButtonsControls="true"
           autoWidth="true"
-          autoHeight="true"
           infinite
         >
           <div className={classes.fontContainer}>
-            <a>
-              <img src="" alt="Person"></img>
-            </a>
+              <img src={truckDriver1} alt="Person"></img>
             <h3>{t.talkAboutTitle}</h3>
             <p>{t.talkAboutText}</p>
             <div className={classes.lineWithText}>
@@ -33,9 +35,7 @@ const LetsTalkAbout = () => {
             </div>
           </div>
           <div className={classes.fontContainer}>
-            <a>
-              <img src="" alt="Person"></img>
-            </a>
+              <img src={truckDriver} alt="Person"></img>
             <h3>{t.talkAboutTitle}</h3>
             <p>{t.talkAboutText}</p>
             <div className={classes.lineWithText}>

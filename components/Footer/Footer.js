@@ -15,7 +15,7 @@ const ContactForm = () => {
               className={classes.contactBox}
               itemprop="address"
               itemScope
-              itemtype="https://schema.org/PostalAddress"
+              itemType="https://schema.org/PostalAddress"
             >
               <h3>{t.footerContact}</h3>
               <address itemprop="streetAddress">
