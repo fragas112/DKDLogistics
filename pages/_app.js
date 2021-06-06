@@ -5,14 +5,6 @@ import "react-alice-carousel/lib/scss/alice-carousel.scss";
 import MessengerCustomerChat from "react-messenger-customer-chat";
 import Head from "../utils/head";
 class MyApp extends App {
-  static async getInitialProps({ Component, ctx }) {
-    let pageProps;
-    // Ensure getInitialProps gets called on our child pages
-    if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps({ ctx });
-    }
-    return { pageProps };
-  }
   render() {
     const { Component, pageProps } = this.props;
     return (
